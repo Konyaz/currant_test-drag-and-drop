@@ -1,8 +1,5 @@
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
-
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class DragAndDrop {
@@ -12,11 +9,5 @@ public class DragAndDrop {
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
-
-
-
-
-
-
     }
 }
